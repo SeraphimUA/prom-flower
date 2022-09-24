@@ -1,21 +1,72 @@
 * {
-    font-family: 'Source Sans Pro', 'Segoe UI', sans-serif;
+  font-family: "Source Sans Pro", "Segoe UI", sans-serif;
 }
 
 header {
-    background-color: #a9bfe4;
-    height: 100px;
+  background-color: #a9bfe4;
+  height: 100px;
 }
+
+.navbar {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-item a {
+  display: inline-block;
+  padding: 10px 15px;
+  text-decoration: none;
+  color: white;
+  vertical-align: middle;
+}
+
 .logo {
-    float: left;
-    height: 80px;
-    padding: 10px 20px;
+  float: left;
+  height: 80px;
+  padding: 10px 20px;
 }
-.nav {
-    display: inline-block;
-}
+
 .nav a {
-    display: inline-block;
-    padding: 32px;
-    margin: auto 0;
+  display: inline-block;
+  padding: 32px;
+  margin: auto 0;
+}
+
+section {
+  width: 90%;
+  margin: 0 auto;
+}
+
+#flowers {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+#flowers > article {
+  width: 360px;
+}
+
+#flowers > article > img {
+  width: 360px;
+  margin: 0 0 5px;
+}
+
+#flowers > article > p {
+  text-align: center;
+}
+
+.flowerName {
+  margin: 5px 0;
+}
+
+.flowerPrice {
+  margin: 5px 0;
 }
