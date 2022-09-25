@@ -8,10 +8,12 @@
   <body>
     <header>
       <nav class="navbar">
-        <img class="logo" src="./images/logo.png" alt="logo" />
+        <a href="/">
+          <img class="logo" src="./images/logo.png" alt="logo" />
+        </a>
         <ul class="nav-links">
-          <li class="nav-item"><a href="#">Каталог</a></li>
-          <li class="nav-item"><a href="#">Про нас</a></li>
+          <li class="nav-item"><a href="#catalog">Каталог</a></li>
+          <li class="nav-item"><a href="#aboutus">Про нас</a></li>
           <li class="nav-item"><a href="#">Збери букет</a></li>
           <li class="nav-item"><a href="#">Контакти</a></li>
         </ul>
@@ -20,10 +22,12 @@
     <main>
       <section>
         <div>
+          <a name="aboutus"></a>
           <h1>Про нас</h1>
         </div>
       </section>
       <section id="catalog">
+        <a name="catalog"></a>
         <h1>Каталог</h1>
         <container id="flowers"> </container>
       </section>
