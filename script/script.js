@@ -1,41 +1,12 @@
-const items = [
-  {
-    name: "Ніжна свіжість",
-    flowers: "троянди та лілії",
-    price: 445,
-    image: "./images/bouquet_cart1.png",
-  },
-  {
-    name: "Сорбет",
-    flowers: "хризантеми та троянди",
-    price: 450,
-    image: "./images/bouquet_cart2.png",
-  },
-  {
-    name: "Yellow Song",
-    flowers: "соняшники та солідаго",
-    price: 455,
-    image: "./images/bouquet_cart3.png",
-  },
-  {
-    name: "Персиковий нектар",
-    flowers: "лілії та троянди",
-    price: 455,
-    image: "./images/bouquet_cart4.png",
-  },
-  {
-    name: "Аврора",
-    flowers: "лілії та троянди",
-    price: 460,
-    image: "./images/bouquet_cart5.png",
-  },
-  {
-    name: "Класика кохання",
-    flowers: "червоні троянди",
-    price: 465,
-    image: "./images/bouquet_cart6.png",
-  },
-];
+fetch("https://run.mocky.io/v3/539e6e32-094f-4db9-a465-d3ba23b38fd7")
+  .then((res) => res.json())
+  .then((data) => {
+    data.forEach((oneItem) => {
+      const flowersCont = document.getElementById("flowers");
+      const flowerArticle = createArticle(oneItem);
+      flowersCont.appendChild(flowerArticle);
+    });
+  });
 
 function createArticle(item) {
   let flowerItem = document.createElement("article");
@@ -52,10 +23,3 @@ function createArticle(item) {
   flowerItem.appendChild(flowerPrice);
   return flowerItem;
 }
-
-items.forEach(oneItem => {
-    const flowersCont = document.getElementById("flowers");
-    console.dir(flowersCont);
-    const flowerArticle = createArticle(oneItem);
-    flowersCont.appendChild(flowerArticle);
-})
