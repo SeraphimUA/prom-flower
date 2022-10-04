@@ -22,6 +22,7 @@ header {
 .nav-item a {
   display: inline-block;
   padding: 10px 15px;
+  margin: 0 20px;
   text-decoration: none;
   color: white;
   vertical-align: middle;
@@ -53,7 +54,7 @@ section {
 #flowers > article {
   width: 360px;
   box-shadow: 0 3px 5px red;
-  margin: 30px 0;
+  margin: 30px 20px;
 }
 
 #flowers > article > img {
